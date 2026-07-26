@@ -103,6 +103,9 @@ Through this project, I gained hands-on experience in:
 ### Delete Student
 ![Delete Student](screenshots/6-deletestudent.png)
 
+### Exit
+![Exit](screenshots/7-exit.png)
+
 
 ## 🔮 Future Enhancements
 
