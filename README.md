@@ -83,6 +83,26 @@ Through this project, I gained hands-on experience in:
 * Improving problem-solving and logical thinking skills
 
 ---
+## Screenshots
+
+### Main Menu
+![Main Menu](screenshots/1-menu.png)
+
+### Add Student
+![Add Student](screenshots/2-addstudent.png)
+
+### Display Students
+![Display Students](screenshots/3-displaystudent.png)
+
+### Search Student
+![Search Student](screenshots/4-searchstudent.png)
+
+### Update Student
+![Update Student](screenshots/5-updatestudent.png)
+
+### Delete Student
+![Delete Student](screenshots/6-deletestudent.png)
+
 
 ## 🔮 Future Enhancements
 
