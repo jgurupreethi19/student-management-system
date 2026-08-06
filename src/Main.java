@@ -1,7 +1,9 @@
 import java.util.*;
+import java.io.*;
 class Main{
-	public static void main(String[] args) {
+	public static void main(String[] args) throws IOException{
 		StudentManagement sm=new StudentManagement();
+		sm.loadStudents();
 		Scanner sc=new Scanner(System.in);
 		int n;
 		while(true){
@@ -19,15 +21,24 @@ class Main{
 		case 1:{
 			System.out.println("Enter Id: ");
 			int id=sc.nextInt();
+			if(id<=0){
+				System.out.println("ID should not be lessthan or equal to zero");
+				return;
+			}
 			System.out.println("Enter Name: ");
 			String name=sc.next();
 			System.out.println("Enter Std: ");
 			int std=sc.nextInt();
 			System.out.println("Enter Age: ");
 			int age=sc.nextInt();
+			if(age<3||age>16){
+				System.out.println("Age should not be lessthan 3 or greaterthan 16");
+				return;
+			}
 			System.out.println("Enter Marks: ");
 			int marks=sc.nextInt();
 			sm.addStudent(id,name,std,age,marks);
+			sm.saveStudents();
 			break;
 		}
 		case 2:{
@@ -52,16 +63,18 @@ class Main{
 			System.out.println("Enter Marks: ");
 			int marks=sc.nextInt();
 			sm.updateStudent(id,name,std,age,marks);
+			sm.saveStudents();
 			break;
 		}
 		case 5:{
 			System.out.println("Enter Id: ");
 			int id=sc.nextInt();
 			sm.deleteStudent(id);
+			sm.saveStudents();
 			break;
 		}
 		case 6:{
-			System.out.println("Thank You!");
+			System.out.println("Thank You for using Student Management System!");
 			System.exit(0);
 			break;
 		}
@@ -71,12 +84,5 @@ class Main{
 	}
 }
 
-		/*sm.addStudent(1,"hima",5,9,500);
-		sm.addStudent(2,"riya",6,12,450);
-		sm.displayStudent();
-		sm.searchStudent(1);
-		sm.updateStudent(3,"hima J",5,9,550);
-		sm.deleteStudent(2);
-		sm.displayStudent();*/
 	}
 }
