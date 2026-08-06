@@ -9,14 +9,17 @@ This project was developed to strengthen my understanding of **Java programming*
 ---
 
 ## ✨ Features
+- ➕ Add Student
+- 📋 Display All Students
+- 🔍 Search Student by ID
+- ✏️ Update Student Details
+- 🗑️ Delete Student Record
+- 💾 Save Student Data to File
+- 📂 Load Student Data Automatically
+- ✅ Input Validation
+- ⚠️ Exception Handling
+- 🔄 Data Persistence using File Handling
 
-* ➕ Add new student records
-* 📋 View all student records
-* ✏️ Update existing student information
-* 🗑️ Delete student records
-* 🔍 Search for a student *(if implemented)*
-* 📌 Menu-driven console interface
-* ✅ Simple and user-friendly design
 
 ---
 
@@ -25,16 +28,21 @@ This project was developed to strengthen my understanding of **Java programming*
 * **Java**
 * Object-Oriented Programming (OOP)
 * Console-Based Application
-
+* ArrayList
+* File Handling (File, FileWriter, Scanner)
+* Exception Handling
+* Input Validation
 ---
 
 ## 📂 Project Structure
 
 ```text
-Student-Management-System/
-│── src/
-│── README.md
-└── .gitignore
+student-management-system/
+│── Main.java
+│── Student.java
+│── StudentManagement.java
+│── students.txt
+
 ```
 
 ---
@@ -61,26 +69,30 @@ git clone https://github.com/jgurupreethi19/Student-Management-System.git
 ---
 
 ## 💡 Concepts Demonstrated
+ * Classes & Objects
+ * Constructors
+ * Encapsulation
+- ArrayList
+- Loops
+- Methods
+- File Handling
+- Exception Handling
+- Input Validation
+- Collections Framework
 
-* Java Programming
-* Classes and Objects
-* Encapsulation
-* Methods
-* Loops and Conditional Statements
-* User Input Handling
-* Basic Data Management
 
 ---
-
 ## 🎯 Learning Outcomes
 
-Through this project, I gained hands-on experience in:
+Through this project, I gained practical experience in:
 
-* Developing a menu-driven Java application
-* Applying Object-Oriented Programming principles
-* Writing clean and organized code
-* Implementing CRUD operations
-* Improving problem-solving and logical thinking skills
+* Developing a CRUD application in Java
+* Applying Object-Oriented Programming concepts
+* Implementing file handling for data persistence
+* Using collections like ArrayList
+* Handling exceptions effectively
+* Validating user input
+* Writing modular and maintainable code
 
 ---
 ## Screenshots
@@ -105,22 +117,28 @@ Through this project, I gained hands-on experience in:
 
 ### Exit
 ![Exit](screenshots/7-exit.png)
+### students.txt
+![students.txt](screenshots/students.txt.png)
 
 
 ## 🔮 Future Enhancements
 
-* Store data using MySQL or SQLite
-* Build a graphical user interface (GUI) using Java Swing or JavaFX
-* Export student records to CSV or PDF
-* Add user authentication
-* Improve search and filtering capabilities
+* Login Authentication
+* GUI using Java Swing or JavaFX
+* Database Integration (MySQL)
+* Export Data to CSV
+* Sorting and Filtering Students
 
 ---
 
 ## 👩‍💻 Author
 
 **J GURUPREETHI**
+* Java Developer
+* Python Programmer
+* SQL Enthusiast
 
+---
 **GitHub: https://github.com/jgurupreethi19**
 
-If you found this project useful, feel free to ⭐ the repository.
+⭐ If you found this project helpful, consider giving it a **Star** on GitHub!
